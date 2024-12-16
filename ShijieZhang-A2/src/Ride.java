@@ -65,9 +65,9 @@ public class Ride implements RiderInterface,Comparator<Visitor> {  //主题公�
     public void addVisitorToQueue(Visitor visitor){   //向队列中添加访问者
         if(visitor != null){
             visitorQueue.offer(visitor);
-            System.out.println(visitor.getName()+"已成功添加参观队列！");
+            System.out.println(visitor.getName()+"Visitor queue successfully added！");
         }else{
-            System.out.println(visitor.getName()+"未成功添加参观队列！");
+            System.out.println(visitor.getName()+"Visitor queue failed added！");
         }
     }
 
@@ -75,19 +75,19 @@ public class Ride implements RiderInterface,Comparator<Visitor> {  //主题公�
     public void removeVisitorFromQueue(Visitor visitor) { //从队列中移除访问者
         if(visitor != null){
             visitorQueue.remove(visitor);
-            System.out.println(visitor.getName()+"已成功移除参观队列！");
+            System.out.println(visitor.getName()+"The visitor queue was successfully removed！");
         }else{
-            System.out.println(visitor.getName()+"已成功移除参观队列！");
+            System.out.println(visitor.getName()+"The visitor queue was successfully removed！");
         }
     }
 
     @Override
     public void printQueue() {   //打印队列中等待访问者的列表
         if(visitorQueue.isEmpty()) {
-            System.out.println("当前参观队列为空！");
+            System.out.println("The current visitor queue is empty！");
         }else {
-            System.out.println("-------------------------------------------------------------------------");
-            System.out.println("参观队列内容如下:");
+            System.out.println("-------------------------------------------------------------------------------");
+            System.out.println("The viewing queue is as follows:");
             for (Visitor visitor : visitorQueue) {
                 System.out.println(visitor.toString());
             }
@@ -97,7 +97,7 @@ public class Ride implements RiderInterface,Comparator<Visitor> {  //主题公�
     @Override
     public void addVisitorToHistory(Visitor visitor) {   //添加到游客参观历史中,删除队列中当前游客的数据
         visitorList.add(visitor);
-        System.out.println(visitor.getName()+"游客已从参观队列中至游客参观历史中！");
+        System.out.println(visitor.getName()+"Visitors have been moved from the visitor queue to the visitor visit history！");
         if(getVisitorQueue().contains(visitor)){
             removeVisitorFromQueue(visitor);
         }
@@ -120,10 +120,10 @@ public class Ride implements RiderInterface,Comparator<Visitor> {  //主题公�
     @Override
     public void printRideHistory() {
         if(numberOfVisitors() == 0){
-            System.out.println("游客参观历史记录数据为空！");
+            System.out.println("Visitor visit history data is empty！");
         }else{
             Iterator iterator = visitorList.iterator();
-            System.out.println("游客参观历史记录数据如下：");
+            System.out.println("Visitor visit history data are as follows：");
             while (iterator.hasNext()){
                 Visitor visitor = (Visitor) iterator.next();
                 System.out.println(visitor.toString());
@@ -135,11 +135,11 @@ public class Ride implements RiderInterface,Comparator<Visitor> {  //主题公�
     @Override
     public void runOneCycle() {
         if (operator == null) {
-            System.out.println("无操作员,游乐设施无法运行！");
+            System.out.println("The ride cannot operate without an operator！");
             return ;
         }
         if (visitorQueue.isEmpty()) {
-            System.out.println("无游客队列,游乐设施无法运行！");
+            System.out.println("The ride cannot operate without a queue of visitors！");
             return ;
         }
         //接待游客人数 (当前最多接待游客人数,如果最大)
@@ -152,7 +152,7 @@ public class Ride implements RiderInterface,Comparator<Visitor> {  //主题公�
         }
         // 增加周期次数
         numOfCycles++;
-        System.out.println("游乐设施运行"+numOfCycles+ "次，接待了" + riders + "个游客。");
+        System.out.println("Amusement facility operation"+numOfCycles+ "Times, welcome" + riders + "tourist。");
     }
 
     @Override
@@ -170,7 +170,7 @@ public class Ride implements RiderInterface,Comparator<Visitor> {  //主题公�
                 writer.write(visitor.toString());
                 writer.write("\n");
             }
-            System.out.println("数据已成功导出！导出文件名:"+filename);
+            System.out.println("Data has been successfully exported! Export file name:"+filename);
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
@@ -182,20 +182,21 @@ public class Ride implements RiderInterface,Comparator<Visitor> {  //主题公�
             while ((line = reader.readLine()) != null) {
                 String[] str = line.split("\t");
                 String name = str[0].substring(8); // 去掉前缀
-                char gender =str[1].charAt(0);
+               char gender =str[1].charAt(0);
                 int age = Integer.parseInt(str[2]);
                 String ticketType = str[3];
                 String ticketDate = str[4];
                 String item = str[5];
                 String id = str[6];
-                Visitor visitor = new Visitor(name, gender, age, ticketType, ticketDate,item,id);
+                String Phone = str[7];
+                Visitor visitor = new Visitor(name, gender, age, ticketType, ticketDate,item,id,Phone);
 
                 if (visitor != null) {
                     addVisitorToQueue(visitor);
                     addVisitorToHistory(visitor);
                 }
             }
-            System.out.println("数据已成功导入！导入文件名:"+filename);
+            System.out.println("Data has been successfully imported! Import file name:"+filename);
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
