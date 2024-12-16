@@ -16,19 +16,19 @@ public class AssignmentTwo {
     public void partThree(){
 
         //创建工作人员对象
-        Employee employee1 = new Employee("Tom",'男',32,"Roller_Coaster_events",8000);//过山车工作人员
-        Employee employee2 = new Employee("Sam",'男',24,"Water_sports_events",10000);//水上运动工作人员
+        Employee employee1 = new Employee("Tom","male",32,"Roller_Coaster_events",8000);//过山车工作人员
+        Employee employee2 = new Employee("Sam","male",24,"Water_sports_events",10000);//水上运动工作人员
 
         //创建设施对象
         Ride ride = new Ride("Roller_Coaster", 1,employee1);   //设施--过山车   运行中
         Ride ride1 = new Ride("Water_sports", 2,employee2);   //设施--水上运动   运行中
 
         // 创建游客对象
-        Visitor v1 = new Visitor("Landon",'男', 36, "adult_ticket",   "2024-10-14","Roller_Coaster","V00000001","17769627352");
-        Visitor v2 = new Visitor("Shakti",    '女', 30, "adult_ticket",   "2024-11-21","Water_sports",  "V00000002","12241431573");
-        Visitor v3 = new Visitor("Dawson",     '男', 18, "student_ticket", "2024-12-13","Water_sports",  "V00000003","1303542514");
-        Visitor v4 = new Visitor("Gracia",    '女', 6,  "child_ticket",   "2024-11-17","Roller_Coaster","V00000004","12569875586");
-        Visitor v5 = new Visitor("Hollis",     '男', 55, "senior_ticket",  "2024-10-24","Roller_Coaster","V00000005","19155778899");
+        Visitor v1 = new Visitor("Landon","male", 36, "adult_ticket",   "2024-10-14","Roller_Coaster","V00000001","17769627352");
+        Visitor v2 = new Visitor("Shakti",    "female", 30, "adult_ticket",   "2024-11-21","Water_sports",  "V00000002","12241431573");
+        Visitor v3 = new Visitor("Dawson",     "male", 18, "student_ticket", "2024-12-13","Water_sports",  "V00000003","1303542514");
+        Visitor v4 = new Visitor("Gracia",    "female", 6,  "child_ticket",   "2024-11-17","Roller_Coaster","V00000004","12569875586");
+        Visitor v5 = new Visitor("Hollis",     "male", 55, "senior_ticket",  "2024-10-24","Roller_Coaster","V00000005","19155778899");
 
         // 添加游客到队列
         ride.addVisitorToQueue(v1);
@@ -51,19 +51,19 @@ public class AssignmentTwo {
     public void partFourA(){
 
         //创建工作人员对象
-        Employee employee = new Employee("Tom",'男',32,"Roller_Coaster_Rider",8000);  //过山车工作人员
-        Employee employee2 = new Employee("Sam",'男',24,"Water_sports_events",10000);//水上运动工作人员
+        Employee employee = new Employee("Tom","male",32,"Roller_Coaster_Rider",8000);  //过山车工作人员
+        Employee employee2 = new Employee("Sam","male",24,"Water_sports_events",10000);//水上运动工作人员
 
         //创建设施对象
         Ride ride = new Ride("Roller_Coaster", 1,employee);
         Ride ride1 = new Ride("Water_sports", 2,employee2);
 
         //创建游客对象
-        Visitor v1 = new Visitor("Landon",'男', 36, "adult_ticket",   "2024-10-14","Roller_Coaster","V00000001","17769627352");
-        Visitor v2 = new Visitor("Shakti",    '女', 30, "adult_ticket",   "2024-11-21","Water_sports",  "V00000002","12241431573");
-        Visitor v3 = new Visitor("Dawson",     '男', 18, "student_ticket", "2024-12-13","Water_sports",  "V00000003","1303542514");
-        Visitor v4 = new Visitor("Gracia",    '女', 6,  "child_ticket",   "2024-11-17","Roller_Coaster","V00000004","12569875586");
-        Visitor v5 = new Visitor("Hollis",     '男', 55, "senior_ticket",  "2024-10-24","Roller_Coaster","V00000005","19155778899");
+        Visitor v1 = new Visitor("Landon","male", 36, "adult_ticket",   "2024-10-14","Roller_Coaster","V00000001","17769627352");
+        Visitor v2 = new Visitor("Shakti",    "female", 30, "adult_ticket",   "2024-11-21","Water_sports",  "V00000002","12241431573");
+        Visitor v3 = new Visitor("Dawson",     "male", 18, "student_ticket", "2024-12-13","Water_sports",  "V00000003","1303542514");
+        Visitor v4 = new Visitor("Gracia",    "female", 6,  "child_ticket",   "2024-11-17","Roller_Coaster","V00000004","12569875586");
+        Visitor v5 = new Visitor("Hollis",     "male", 55, "senior_ticket",  "2024-10-24","Roller_Coaster","V00000005","19155778899");
 
         //添加游客至队列
         ride.addVisitorToQueue(v1);
@@ -98,19 +98,19 @@ public class AssignmentTwo {
     public void partFourB(){
 
         //创建工作人员对象
-        Employee employee = new Employee("Tom",'男',32,"Roller_Coaster_Rider",8000);  //过山车工作人员
-        Employee employee2 = new Employee("Sam",'男',24,"Water_sports_events",10000);//水上运动工作人员
+        Employee employee = new Employee("Tom","male",32,"Roller_Coaster_Rider",8000);  //过山车工作人员
+        Employee employee2 = new Employee("Sam","male",24,"Water_sports_events",10000);//水上运动工作人员
 
         //创建设施对象
         Ride ride = new Ride("Roller_Coaster", 1,employee);
         Ride ride1 = new Ride("Water_sports", 2,employee2);
 
         //创建游客对象
-        Visitor v1 = new Visitor("Landon",'男', 36, "adult_ticket",   "2024-10-14","Roller_Coaster","V00000001","17769627352");
-        Visitor v2 = new Visitor("Shakti",    '女', 30, "adult_ticket",   "2024-11-21","Water_sports",  "V00000002","12241431573");
-        Visitor v3 = new Visitor("Dawson",     '男', 18, "student_ticket", "2024-12-13","Water_sports",  "V00000003","1303542514");
-        Visitor v4 = new Visitor("Gracia",    '女', 6,  "child_ticket",   "2024-11-17","Roller_Coaster","V00000004","12569875586");
-        Visitor v5 = new Visitor("Hollis",     '男', 55, "senior_ticket",  "2024-10-24","Roller_Coaster","V00000005","19155778899");
+        Visitor v1 = new Visitor("Landon","male", 36, "adult_ticket",   "2024-10-14","Roller_Coaster","V00000001","17769627352");
+        Visitor v2 = new Visitor("Shakti",    "female", 30, "adult_ticket",   "2024-11-21","Water_sports",  "V00000002","12241431573");
+        Visitor v3 = new Visitor("Dawson",     "male", 18, "student_ticket", "2024-12-13","Water_sports",  "V00000003","1303542514");
+        Visitor v4 = new Visitor("Gracia",    "female", 6,  "child_ticket",   "2024-11-17","Roller_Coaster","V00000004","12569875586");
+        Visitor v5 = new Visitor("Hollis",     "male", 55, "senior_ticket",  "2024-10-24","Roller_Coaster","V00000005","19155778899");
 
         ride.addVisitorToHistory(v1);
         ride.addVisitorToHistory(v2);
@@ -131,24 +131,24 @@ public class AssignmentTwo {
 
     public void partFive(){
         //创建工作人员对象
-        Employee employee = new Employee("Tom",'男',32,"Roller_Coaster_Rider",8000);  //过山车工作人员
-        Employee employee2 = new Employee("Sam",'男',24,"Water_sports_events",10000);//水上运动工作人员
+        Employee employee = new Employee("Tom","male",32,"Roller_Coaster_Rider",8000);  //过山车工作人员
+        Employee employee2 = new Employee("Sam","male",24,"Water_sports_events",10000);//水上运动工作人员
 
         //创建设施对象
         Ride ride = new Ride("Roller_Coaster", 1,employee);
         Ride ride1 = new Ride("Water_sports", 2,employee2);
 
         //创建游客对象
-        Visitor v1 = new Visitor("Landon",'男', 36, "adult_ticket",   "2024-10-14","Roller_Coaster","V00000001","17769627352");
-        Visitor v2 = new Visitor("Shakti",    '女', 30, "adult_ticket",   "2024-11-21","Water_sports",  "V00000002","12241431573");
-        Visitor v3 = new Visitor("Dawson",     '男', 18, "student_ticket", "2024-12-13","Water_sports",  "V00000003","1303542514");
-        Visitor v4 = new Visitor("Gracia",    '女', 6,  "child_ticket",   "2024-11-17","Roller_Coaster","V00000004","12569875586");
-        Visitor v5 = new Visitor("Hollis",     '男', 55, "senior_ticket",  "2024-10-24","Roller_Coaster","V00000005","19155778899");
-        Visitor v6 = new Visitor("Armani",  '男', 16, "student_ticket", "2024-10-10","Roller_Coaster","V00000006","12345678911");
-        Visitor v7 = new Visitor("Jelena",   '女', 32, "adult_ticket",   "2024-9-19", "Water_sports",  "V00000007","15748968888");
-        Visitor v8 = new Visitor("Kerwin",   '男', 21, "student_ticket", "2024-7-21", "Roller_Coaster","V00000008","17897564444");
-        Visitor v9 = new Visitor("Sheryl",    '女', 4,  "child_ticket",   "2024-10-20","Roller_Coaster","V00000009","10101234555");
-        Visitor v10 = new Visitor("Aminah",   '男', 65, "senior_ticket",  "2024-12-19","Roller_Coaster","V00000010","11111222233");
+        Visitor v1 = new Visitor("Landon","male", 36, "adult_ticket",   "2024-10-14","Roller_Coaster","V00000001","17769627352");
+        Visitor v2 = new Visitor("Shakti",    "female", 30, "adult_ticket",   "2024-11-21","Water_sports",  "V00000002","12241431573");
+        Visitor v3 = new Visitor("Dawson",     "male", 18, "student_ticket", "2024-12-13","Water_sports",  "V00000003","1303542514");
+        Visitor v4 = new Visitor("Gracia",    "female", 6,  "child_ticket",   "2024-11-17","Roller_Coaster","V00000004","12569875586");
+        Visitor v5 = new Visitor("Hollis",     "male", 55, "senior_ticket",  "2024-10-24","Roller_Coaster","V00000005","19155778899");
+        Visitor v6 = new Visitor("Armani",  "male", 16, "student_ticket", "2024-10-10","Roller_Coaster","V00000006","12345678911");
+        Visitor v7 = new Visitor("Jelena",   "female", 32, "adult_ticket",   "2024-9-19", "Water_sports",  "V00000007","15748968888");
+        Visitor v8 = new Visitor("Kerwin",   "male", 21, "student_ticket", "2024-7-21", "Roller_Coaster","V00000008","17897564444");
+        Visitor v9 = new Visitor("Sheryl",    "female", 4,  "child_ticket",   "2024-10-20","Roller_Coaster","V00000009","10101234555");
+        Visitor v10 = new Visitor("Aminah",   "male", 65, "senior_ticket",  "2024-12-19","Roller_Coaster","V00000010","11111222233");
 
         ride.addVisitorToQueue(v1);
         ride.addVisitorToQueue(v2);
@@ -178,19 +178,19 @@ public class AssignmentTwo {
     public void partSix(){
 
         //创建工作人员对象
-        Employee employee = new Employee("Tom",'男',32,"Roller_Coaster_Rider",8000);  //过山车工作人员
-        Employee employee2 = new Employee("Sam",'男',24,"Water_sports_events",10000);//水上运动工作人员
+        Employee employee = new Employee("Tom","male",32,"Roller_Coaster_Rider",8000);  //过山车工作人员
+        Employee employee2 = new Employee("Sam","male",24,"Water_sports_events",10000);//水上运动工作人员
 
         //创建设施对象
         Ride ride = new Ride("Roller_Coaster", 1,employee);
         Ride ride1 = new Ride("Water_sports", 2,employee2);
 
         //创建游客对象
-        Visitor v1 = new Visitor("Landon",'男', 36, "adult_ticket",   "2024-10-14","Roller_Coaster","V00000001","17769627352");
-        Visitor v2 = new Visitor("Shakti",    '女', 30, "adult_ticket",   "2024-11-21","Water_sports",  "V00000002","12241431573");
-        Visitor v3 = new Visitor("Dawson",     '男', 18, "student_ticket", "2024-12-13","Water_sports",  "V00000003","1303542514");
-        Visitor v4 = new Visitor("Gracia",    '女', 6,  "child_ticket",   "2024-11-17","Roller_Coaster","V00000004","12569875586");
-        Visitor v5 = new Visitor("Hollis",     '男', 55, "senior_ticket",  "2024-10-24","Roller_Coaster","V00000005","19155778899");
+        Visitor v1 = new Visitor("Landon","male", 36, "adult_ticket",   "2024-10-14","Roller_Coaster","V00000001","17769627352");
+        Visitor v2 = new Visitor("Shakti",    "female", 30, "adult_ticket",   "2024-11-21","Water_sports",  "V00000002","12241431573");
+        Visitor v3 = new Visitor("Dawson",     "male", 18, "student_ticket", "2024-12-13","Water_sports",  "V00000003","1303542514");
+        Visitor v4 = new Visitor("Gracia",    "female", 6,  "child_ticket",   "2024-11-17","Roller_Coaster","V00000004","12569875586");
+        Visitor v5 = new Visitor("Hollis",     "male", 55, "senior_ticket",  "2024-10-24","Roller_Coaster","V00000005","19155778899");
 
         //添加游客至队列
         ride.addVisitorToQueue(v1);
@@ -212,8 +212,8 @@ public class AssignmentTwo {
     public void partSeven(){
 
         //创建工作人员对象
-        Employee employee = new Employee("Tom",'男',32,"Roller_Coaster_Rider",8000);  //过山车工作人员
-        Employee employee2 = new Employee("Sam",'男',24,"Water_sports_events",10000);//水上运动工作人员
+        Employee employee = new Employee("Tom","male",32,"Roller_Coaster_Rider",8000);  //过山车工作人员
+        Employee employee2 = new Employee("Sam","male",24,"Water_sports_events",10000);//水上运动工作人员
 
         //创建设施对象
         Ride ride = new Ride("Roller_Coaster", 1,employee);

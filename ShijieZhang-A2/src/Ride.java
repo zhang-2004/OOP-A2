@@ -182,7 +182,7 @@ public class Ride implements RiderInterface,Comparator<Visitor> {  //主题公�
             while ((line = reader.readLine()) != null) {
                 String[] str = line.split("\t");
                 String name = str[0].substring(8); // 去掉前缀
-               char gender =str[1].charAt(0);
+                String gender = str[1]; // 直接获取整个字段作为字符串
                 int age = Integer.parseInt(str[2]);
                 String ticketType = str[3];
                 String ticketDate = str[4];

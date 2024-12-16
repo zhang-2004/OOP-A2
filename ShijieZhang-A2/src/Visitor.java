@@ -10,7 +10,7 @@ public class Visitor extends Person{    //主题公园游客
     public Visitor() {
     }
 
-    public Visitor(String name, char gender, int age, String ticketType, String ticketDate,String item,String id,String Phone) {
+    public Visitor(String name, String gender, int age, String ticketType, String ticketDate,String item,String id,String Phone) {
         super(name, gender, age);
         this.ticketType = ticketType;
         this.ticketDate = ticketDate;
